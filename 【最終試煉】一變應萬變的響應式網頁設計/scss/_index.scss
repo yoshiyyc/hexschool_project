@@ -1,0 +1,311 @@
+/*------------------------------------*\
+  #index
+\*------------------------------------*/
+/*------------------------------------*\
+  #banner
+\*------------------------------------*/
+.banner {
+    display: flex;
+    align-items: center;
+    min-height: 420px;
+    color: white;
+    background-image: url(../img/header_desktop@2x.png);
+    background-size: cover, 100% 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    @include rwd(600) {
+        background-image: url(../img/header_mobile@2x.png);
+        background-position: center center;
+    }
+
+    &__title-box {
+        margin: 0 auto;
+        width: calc(1024px * 460/1024);
+        padding: 20px 22px 26px;
+        text-align: center;
+        background: rgba(0,0,0,0.35);
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        line-height: calc(1 + 5/16);
+        @include rwd(600) {
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #index
+\*------------------------------------*/
+/*------------------------------------*\
+  #specialty
+\*------------------------------------*/
+.specialty__title {
+    width: auto;
+    position: relative;
+    margin-bottom: 31px;
+
+    &::before,
+    &::after {
+        content:"";
+        position: absolute;
+        top: 50%;
+        margin: 0 auto;
+        width: calc(100% * 120/1024);
+        line-height: 0px;
+        border-bottom: 1px solid $t-color;
+        @include rwd(414) {
+            display: none;
+        }
+    }
+
+    &::before {
+        right: calc(60% + 120px);
+        transform: translate(50%, -50%);
+    }
+
+    &::after {
+        left: calc(60% + 120px);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.specialty__items {
+    margin: 0 calc(100% * 30/1024);
+    width: calc(100%/3);
+    @include rwd(768){
+        margin: 0 calc(100% * 20/1024);
+    }
+    @include rwd(600) {
+        width: 80%;
+        margin: 30px auto;
+        line-height: 20px;
+    }
+    @include rwd(414) {
+        width: 100%;
+    }
+}
+
+.specialty__img {
+    @include rwd(600) {
+        width: 65%;
+    }
+}
+
+.crop--circle {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.specialty__block-list__title  {
+    margin: 20px 0px 11px 0px;
+    text-align: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #chef
+\*------------------------------------*/
+.chef {
+    color: $bg-color;
+    background: $t-color;
+
+    &__wrap {
+        display: flex;
+        @include rwd(600) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__img-container {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        @include rwd(600) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        @include rwd(600) {
+            width: 90%;
+        }
+    }
+
+    &__text {
+        padding: 80px 25px;
+        width: 50%;
+        @include rwd(600) {
+            padding: 25px;
+            width: 100%;
+        }
+        @include rwd(360) {
+            padding: 25px 0px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        text-align: left;
+
+        &--english {
+            line-height: 0px;
+            font-size: 16px;
+        }
+    }
+
+    &__paragraph {
+        @include rwd(600) {
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #testimonial
+\*------------------------------------*/
+.testimonial__title {
+    margin-bottom: 32px;
+}
+
+.testimonial__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0;
+    width: calc(100%/3 - 40px);
+}
+
+.testimonial__img-container {
+    margin: 0 0;
+    width: calc(100% * 67/300);
+}
+
+.testimonial__text {
+    width: calc(100% * 220/300);
+}
+
+.testimonial__block-list {
+    @include rwd(768) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 22px 0px;
+        text-align: left;
+        line-height: 0px;
+    }
+
+    &__content {
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+
+    &__role {
+        text-align: right;
+    }    
+}
+
+.testimonial__items {
+    @include rwd(768) {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #reservation
+\*------------------------------------*/
+.reservation {
+    background: white;
+
+    &__title {
+        margin-bottom: 38px;
+    }
+
+    &__area {
+        display: flex;
+        justify-content: space-between;
+        @include rwd(600) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__img-container {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px;
+        width: calc(50% - 10px);
+        @include rwd(600) {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
+
+    &__form {
+        width: calc(50% - 10px);
+    }
+}
+
+.reservation-form {
+    width: calc(50% - 10px);
+    @include rwd(600) {
+        width: 100%;
+    }
+
+    &__request {
+        margin-bottom: 6px;
+    }
+
+    &__textfield {
+        margin-bottom: 12px;
+        padding: 5px 14px;
+    }
+
+    &__btn-area {
+        display: flex;
+        align-self: flex-end;
+        flex-wrap: wrap;
+        margin-top: 12px;
+        @include rwd(600) {
+            margin-top: 30px;
+        }
+    }
+
+    &__btn {
+        margin-left: 11px;
+        padding: 6px;
+        width: 70px;
+        @include rwd(600) {
+            margin-left: 20px;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+

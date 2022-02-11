@@ -1,0 +1,46 @@
+/*------------------------------------*\
+  #login
+\*------------------------------------*/
+/*------------------------------------*\
+  #login
+\*------------------------------------*/
+
+.account-section__title,
+.account-section__subtitle {
+    text-align: center;
+    font-family: "Noto Sans TC", "Arial";
+}
+
+.account-section__title {
+    margin-bottom: 5px;
+    line-height: 1em;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.account-section__subtitle {
+    margin-bottom: 35px;
+    font-weight: medium;
+    font-size: 20px;
+}
+
+.login-form {
+    max-width: 300px;
+    @include rwd(360) {
+        width: 100%;
+    }
+
+    &__btn-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        padding: 0px;
+        width: calc(50% - 20px);
+        @include rwd(600) {
+            font-size: 16px;
+        }
+    }
+}

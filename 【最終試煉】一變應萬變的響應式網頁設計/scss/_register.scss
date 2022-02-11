@@ -1,0 +1,52 @@
+
+/*------------------------------------*\
+  #register
+\*------------------------------------*/
+/*------------------------------------*\
+  #register
+\*------------------------------------*/
+.register-form {
+    max-width: 620px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include rwd(540) {
+            flex-direction: column;
+        }
+    }
+
+    &__btn-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__btn {
+        padding: 0px;
+        width: 125px;
+        @include rwd(600) {
+            font-size: 16px;
+        }
+    }
+}
+
+.terms {
+    width: calc(50% - 20px);
+    font-size: 18px;
+    @include rwd(540) {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+.account-creation {
+    width: calc(50% - 20px);
+    @include rwd(540) {
+        width: 100%;
+    }
+}
+
+.mb--double {
+    margin-bottom: 12px;
+}
