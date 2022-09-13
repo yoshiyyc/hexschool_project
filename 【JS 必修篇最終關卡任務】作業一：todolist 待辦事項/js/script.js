@@ -22,7 +22,7 @@ btnAdd.addEventListener("click", (e) => {
 
 //Click(Keypress) - Enter todo items (Enter Key)
 inputBox.addEventListener("keypress", (e) => {
-  if(e.key === "Enter") {
+  if (e.key === "Enter") {
     addToDo();
   }
 });
@@ -38,7 +38,7 @@ function addToDo() {
       checked: false,
       id: Date.now()
     };
-    
+
     todoArr.push(todo);
     createTask(todo);
     updateTaskArr();
@@ -49,7 +49,7 @@ function addToDo() {
 //Function - Create task content using todo status
 function createTask(todo) {
   const task = document.createElement("li");
-  
+
   task.setAttribute("class", `task`);
   task.setAttribute("data-key", todo.id);
   task.innerHTML = `
@@ -59,7 +59,7 @@ function createTask(todo) {
     </label>
     <a class="delete" href="#"></a>
   `;
-  
+
   taskAll.unshift(task);
 };
 
@@ -68,50 +68,50 @@ function updateTaskArr() {
   const allID = [];
   const completedID = [];
   const pendingID = [];
-  
+
   taskCompleted = [];
   taskPending = [];
-  
+
   var tempArr = [];
-  
+
   //Mark and categorize the ids of todos
   todoArr.forEach(i => {
     allID.push(i.id);
-    
+
     if (i.checked === true) {
       completedID.push(i.id);
     }
     else {
       pendingID.push(i.id);
-    } 
+    }
   });
-  
+
   //Update tasks using categorized todo-ids
   taskAll.forEach(task => {
     allID.forEach(id => {
-      if(Number(task.dataset.key) === id) {
+      if (Number(task.dataset.key) === id) {
         tempArr.push(task);
       }
     })
-    
+
     completedID.forEach(id => {
-      if(Number(task.dataset.key) === id) {
+      if (Number(task.dataset.key) === id) {
         taskCompleted.push(task);
       }
     });
-    
+
     pendingID.forEach(id => {
-      if(Number(task.dataset.key) === id) {
+      if (Number(task.dataset.key) === id) {
         taskPending.push(task);
       }
     });
-    
+
   });
-  
+
   taskAll = tempArr;
-  
+
   decideArray();
-  
+
   //Update number of pending tasks
   reminderPending.innerHTML = `${taskPending.length} 個待完成項目`;
 }
@@ -130,7 +130,7 @@ function decideArray() {
         renderData(taskCompleted);
       }
     }
-  });  
+  });
 }
 
 //Function - Render 
@@ -149,39 +149,39 @@ list.addEventListener("click", (e) => {
     const key = e.target.parentElement.parentElement.dataset.key;
     toggleDone(key);
   }
-  
+
   //Click - Delete
   if (e.target.classList.contains("delete")) {
     const key = e.target.parentElement.dataset.key;
     deleteToDo(key);
   }
-  
+
   updateTaskArr();
 });
 
 //Function - Check off task
 function toggleDone(key) {
   todoArr.forEach(i => {
-    if(i.id === Number(key)) {
+    if (i.id === Number(key)) {
       i.checked = !i.checked;
     }
   });
-  
+
   updateTaskArr();
 }
 
 //Function - Delete task
 function deleteToDo(key) {
-  const index = todoArr.findIndex(i => 
-    i.id === Number(key)
-  );
-  todoArr = todoArr.filter(i => 
-    i.id !== Number(key)
-  );
-  taskAll = taskAll.filter(i =>                       
-    i.dataset.key !== key
-  );
-} 
+  const index = todoArr.findIndex(i => {
+    return i.id === Number(key)
+  });
+  todoArr = todoArr.filter(i => {
+    return i.id !== Number(key)
+  });
+  taskAll = taskAll.filter(i => {
+    return i.dataset.key !== key
+  });
+}
 
 //Click - Delete all completed tasks
 deleteAll.addEventListener("click", (e) => {
@@ -194,7 +194,7 @@ function deleteAllComp() {
   todoArr = todoArr.filter(i => {
     return i.checked === false;
   });
-} 
+}
 
 
 //Click - change tab
@@ -202,9 +202,9 @@ tab.addEventListener("click", (e) => {
   tabCollection.forEach(i => {
     i.classList.remove("tab__item--active");
   });
-  
+
   e.target.focus();
   e.target.classList.add("tab__item--active");
-  
+
   decideArray();
 });
