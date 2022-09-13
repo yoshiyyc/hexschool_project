@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600, 700");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+$default: #ffd370;
+$dark: #333;
+$gray: #9f9a91;
+$light: #efefef;
+body {
+  min-height: 100vh;
+  background: #eee;
+  display: flex;
+  color: $dark;
+  background-image: linear-gradient(
+    174deg,
+    $default 2%,
+    $default 46%,
+    #ffffff 46%,
+    #ffffff 100%,
+    #e8e8e8 100%
+  );
+  letter-spacing: 0.07em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Baloo Tamma 2";
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  @media (max-width: 575px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.container {
+  margin: 3rem auto 1.5rem auto;
+  padding: 0 12px;
+  width: 500px;
+  @media (max-width: 575px) {
+    margin-top: 1.5rem;
+  }
+}
+.card {
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+input[type="text"] {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: $dark;
+  &::placeholder {
+    color: $gray;
+  }
+}
+.input {
+  padding: 4px 4px 4px 1rem;
+  display: flex;
+}
+.btn--add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: $dark;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+// card_list
+.card__list {
+  padding: 0;
+}
+
+.tab {
+  display: flex;
+  text-align: center;
+  color: $gray;
+  font-size: 14px;
+  &__item {
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 2px solid $light;
+    &--active {
+      border-bottom: 2px solid $dark;
+      color: $dark;
+      font-weight: bold;
+    }
+  }
+}
+.card__content {
+  padding: 0.5rem 1rem 1rem 1rem;
+  @media (max-width: 575px) {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+.list {
+  li {
+    position: relative;
+    padding-right: 2rem;
+    @media (max-width: 575px) {
+      padding-right: 0;
+    }
+    a.delete {
+      position: absolute;
+      opacity: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+      color: $dark;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background: transparent;
+      background-image: url("../img/delete.png");
+      background-size: contain;
+      @media (max-width: 575px) {
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+      }
+    }
+    &:hover a.delete {
+      opacity: 1;
+    }
+  }
+}
+
+.list__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1rem 0.5rem;
+  font-size: 14px;
+  a {
+    color: $gray;
+    text-decoration: none;
+  }
+  @media (max-width: 575px) {
+    padding: 1.5rem 0 1rem 0.5rem;
+  }
+}
+
+.checkbox {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: block;
+  padding-left: 44px;
+  cursor: pointer;
+  span {
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5;
+    @media (max-width: 575px) {
+      padding-right: 1rem;
+    }
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid $dark;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 27%;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 0.5rem;
+    border-radius: 1px;
+    border-bottom: 3px solid $default;
+    border-right: 3px solid $default;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  input:checked {
+    ~ span {
+      color: $gray;
+      text-decoration: line-through;
+    }
+    ~ span::before {
+      border-color: transparent;
+      transform: translateY(-50%) scale(0);
+    }
+    ~ span::after {
+      opacity: 1;
+    }
+  }
+}
