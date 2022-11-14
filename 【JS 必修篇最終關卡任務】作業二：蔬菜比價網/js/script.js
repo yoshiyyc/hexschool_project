@@ -7,14 +7,32 @@ const allBtn = document.querySelector(".allBtn");
 const cropInput = document.querySelector("#crop");
 const search = document.querySelector(".search");
 const showList = document.querySelector(".showList");
+const order = document.querySelector("#js-select");
+const orderMobile = document.querySelector("#js-moblie-select");
+const tHead = document.querySelector("thead");
 
-var value = "";
+let value = "";
 
-var filteredArr = [];
-var veggieArr = [];
-var fruitArr = [];
-var flowerArr = [];
-var showArr = [];
+let allArr = [];
+let filteredArr = [];
+let veggieArr = [];
+let fruitArr = [];
+let flowerArr = [];
+let showArr = [];
+
+
+//Call API
+axios
+    .get("https://hexschool.github.io/js-filter-data/data.json")
+    .then((response) => {
+        allArr = response.data.filter(i => {
+            return i["作物名稱"];
+        });
+    })
+    .catch(error => {
+        console.log(error);
+    });
+
 
 //Click - To search (Search button)
 search.addEventListener("click", (e) => {
@@ -34,11 +52,15 @@ function startSearching() {
         value = cropInput.value;
         showCenterMessage("資料載入中...");
         resetTab();
-        callAPI();
+        filterArr();
+        decideArr();
     }
     else {
         alert("請輸入作物名稱");
     }
+
+    order.value = "排序";
+    orderMobile.value = "排序";
 }
 
 //Function - Show messages other than data list
@@ -55,19 +77,8 @@ function showCenterMessage(message) {
     showList.append(dataRow);
 }
 
-//Function - Call API
-function callAPI() {
-    axios
-        .get("https://hexschool.github.io/js-filter-data/data.json")
-        .then((response) => {
-            const allArr = response.data;
-            filterArr(allArr);
-            decideArr();
-        });
-}
-
 //Function - Filter list by keyword
-function filterArr(allArr) {
+function filterArr() {
     let regex = new RegExp(value);
 
     filteredArr = allArr.filter((i) => {
@@ -85,6 +96,9 @@ function filterArr(allArr) {
     flowerArr = filteredArr.filter((i) => {
         return i["種類代碼"] === "N06";
     });
+
+    order.value = "排序";
+    orderMobile.value = "排序";
 }
 
 //Click - Select tab and set active
@@ -132,7 +146,8 @@ function decideArr() {
             }
         }
     });
-    renderList();
+
+    dropdownOrderDesc(document.querySelector("option[value='交易量']").value);
 }
 
 //Function - Render list
@@ -162,24 +177,28 @@ function renderList() {
 /******************\
 | Part II - Sort  
 \******************/
-const order = document.querySelector("#js-select");
-const orderMobile = document.querySelector("#js-moblie-select");
-const tHead = document.querySelector("thead");
-
 //Click(select tab) - Use the dropdown menu to sort
 order.addEventListener("change", (e) => {
-    dropdownOrder(e);
+    dropdownOrderAsc(e.target.value);
 });
 
 //Click(select tab) - Use the dropdown menu to sort (mobile)
 orderMobile.addEventListener("change", (e) => {
-    dropdownOrder(e);
+    dropdownOrderAsc(e.target.value);
 });
 
 //Function - Sort the datalist based on dropdown
-function dropdownOrder(e) {
+function dropdownOrderAsc(target) {
     showArr.sort((a, b) => {
-        return a[e.target.value] - b[e.target.value];
+        return a[target] - b[target];
+    });
+
+    renderList();
+}
+
+function dropdownOrderDesc(target) {
+    showArr.sort((a, b) => {
+        return b[target] - a[target];
     });
 
     renderList();
@@ -187,16 +206,13 @@ function dropdownOrder(e) {
 
 //Click - Sort the datalist when the carets are clicked
 tHead.addEventListener("click", (e) => {
+    order.value = e.target.dataset.price;
+    orderMobile.value = e.target.dataset.price;
+
     if (e.target.dataset.sort === "up") {
-        showArr.sort((a, b) => {
-            return a[e.target.dataset.price] - b[e.target.dataset.price];
-        });
+        dropdownOrderAsc(e.target.dataset.price);
     }
     else if (e.target.dataset.sort === "down") {
-        showArr.sort((a, b) => {
-            return b[e.target.dataset.price] - a[e.target.dataset.price];
-        });
+        dropdownOrderDesc(e.target.dataset.price);
     }
-
-    renderList();
 });
