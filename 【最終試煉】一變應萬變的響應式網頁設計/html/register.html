@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' /">
+    <link rel="stylesheet" href="../css/lightbox.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>一變應萬變的響應式網頁設計</title>
+
+    <link rel="icon" href="../img/六角學院_Icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/六角學院_Icon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/六角學院_Icon.png">
+
+    <meta name="description" content="六角西餐廳 - 咬一口就無法忘懷的漢堡">
+
+    <meta property="og:title" content="六角西餐廳註冊頁">
+    <meta property="og:description" content="六角西餐廳 - 咬一口就無法忘懷的漢堡">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="../img/六角學院 Icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap max-wrap">
+            <h1 class="header__logo logo">
+                <a class="logo__link" href="../html/index.html">
+                    六角西餐廳
+                </a>
+            </h1>
+            <nav class="navbar">
+                <i class="hamburger-icon fas fa-bars">
+                </i>
+                <ul class="nav-menu ">
+                    <li class="nav-menu__items dropdown">
+                        <a class="nav-menu__link" href="#">
+                            介紹
+                        </a>
+                        <ul class="nav-submenu">
+                            <li class="nav-submenu__items">
+                                <a class="nav-submenu__link" href="../html/index.html#specialty">
+                                    特色
+                                </a>
+                            </li>
+                            <li class="nav-submenu__items">
+                                <a class="nav-submenu__link" href="../html/index.html#chef">
+                                    主廚
+                                </a>
+                            </li>
+                            <li class="nav-submenu__items">
+                                <a class="nav-submenu__link" href="../html/index.html#reservation">
+                                    地圖
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__items">
+                        <a class="nav-menu__link" href="../html/cart.html">
+                            菜單
+                        </a>
+                    </li>
+                    <li class="nav-menu__items dropdown">
+                        <a class="nav-menu__link" href="#">
+                            登入/註冊
+                        </a>
+                        <ul class="nav-submenu">
+                            <li class="nav-submenu__items">
+                                <a class="nav-submenu__link" href="../html/login.html">
+                                    登入
+                                </a>
+                            </li>
+                            <li class="nav-submenu__items">
+                                <a class="nav-submenu__link" href="../html/register.html">
+                                    註冊
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__title-box">
+                <h2 class="banner__title">
+                    咬一口就無法忘懷的漢堡
+                </h2>
+                <h3 class="banner__subtitle">
+                    七夕絕對無法錯過的好滋味
+                    <br>
+                    <i class="fas fa-utensils">
+                    </i>
+                    六角大漢堡
+                    <i class="fas fa-utensils">
+                    </i>
+                </h3>
+            </div>
+        </section>
+        <section class="section">
+            <div class="max-wrap">
+                <h3 class="account-section__title section__title">
+                    六角西餐廳
+                </h3>
+                <h4 class="account-section__subtitle">
+                    享受美食好味道
+                </h4>
+                <form class="register-form account-form" action="#">
+                    <h5 class="account-form__title">
+                        REGISTER
+                    </h5>
+                    <div class="register-form__wrapper">
+                        <p class="terms">
+                            就是這樣條款：
+                            <br>
+                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere
+                            vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis
+                            pellentesque, lacinia dui sed, ultricies sapien...
+                        </p>
+                        <div class="account-creation">
+                            <label class="account-form__request form__request" for="email">
+                                Email Address*
+                            </label>
+                            <div class="account-form__input-wrapper">
+                                <input id="email" class="account-form__textfield form__textfield" name="email"
+                                    type="email" required>
+                                <i class="account-form__icon far fa-envelope">
+                                </i>
+                            </div>
+                            <label class="account-form__request form__request" for="password">
+                                Password*
+                            </label>
+                            <div class="account-form__input-wrapper">
+                                <input id="password" class="account-form__textfield mb--double form__textfield"
+                                    name="password" type="password" required>
+                                <i class="account-form__icon fas fa-lock">
+                                </i>
+                            </div>
+                            <div class="account-form__input-wrapper">
+                                <input id="password" class="account-form__textfield mb--hint-below form__textfield"
+                                    name="password" type="password" required>
+                                <i class="account-form__icon fas fa-lock">
+                                </i>
+                            </div>
+                            <a class="account-form__hint" href="RWD_Final_Project_login.html">
+                                已經有帳號了？
+                            </a>
+                            <div class="register-form__btn-area">
+                                <button class="register-form__btn form__btn btn--primary" type="submit">
+                                    <a class="btn__link" href="#">
+                                        註冊
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrap max-wrap">
+            <div class="company">
+                <div class="company__about">
+                    <h3 class="company__title">
+                        關於 六角西餐廳
+                    </h3>
+                    <p class="company__content">
+                        Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim,
+                        pulvinar lobortis nibh lacinia at.
+                    </p>
+                </div>
+                <div class="company__contact">
+                    <h3 class="company__title">
+                        聯絡方式
+                    </h3>
+                    <ul class="company__content u-list">
+                        <li class="u-list__items">
+                            高雄市中正五路到底
+                        </li>
+                        <li class="u-list__items">
+                            <a class="company__link" href="tel:+886 886 886">
+                                +886 886 886
+                            </a>
+                        </li>
+                        <li class="u-list__items">
+                            <a class="company__link" href="mailto:service@hexschool.com">
+                                service@hexschool.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more-info">
+                <h2 class="footer__logo logo">
+                    <a href="../html/index.html" class="logo__link">
+                        六角西餐廳
+                    </a>
+                </h2>
+                <ul class="sns">
+                    <li class="sns__items">
+                        <a class="sns__link--google-plus" href="#">
+                            <i class="fab fa-google-plus-square">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="sns__items">
+                        <a class="sns__link--twitter" href="#">
+                            <i class="fab fa-twitter-square">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="sns__items">
+                        <a class="sns__link--facebook" href="#">
+                            <i class="fab fa-facebook-square">
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/lightbox-plus-jquery.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
