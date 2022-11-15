@@ -58,3 +58,27 @@ All the projects below are listed chronogically with some highlights commented
 * 設計稿由六角學院提供
 * 單頁履歷版型練習
 * 使用 flex 及 pseudo classes 技巧製作出時間軸
+
+#
+
+### 【最終試煉】使用 jQuery 打造互動性網頁動畫效果 - Using jQuery to create animation effects for an interactive website
+
+[GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C) 
+
+[GitHub Pages](https://yoshiyyc.github.io/hexschool_project/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C/html/) 
+* The final projects of the course "使用 jQuery 打造互動性網頁動畫效果 - Using HTML & CSS to develop a website" 
+* Visual design provided by Hexschool
+* Used jQuery to achieve the following effects:
+  * Navbar button dropdown
+  * Banner carousel slides ([Swiper](https://swiperjs.com/get-started))
+  * Lightbox effect ([Lightbox](https://lokeshdhakar.com/projects/lightbox2/))
+  * Back to top button
+
+　
+* 「使用 jQuery 打造互動性網頁動畫效果」課程的最終作業
+* 設計稿由六角學院提供
+* 使用 jQuery 達成以下動畫效果：
+  * 下拉式選單
+  * 首頁宣傳圖輪播 ([Swiper](https://swiperjs.com/get-started))
+  * 燈箱效果 ([Lightbox](https://lokeshdhakar.com/projects/lightbox2/))
+  * 回到網頁上方按鈕
