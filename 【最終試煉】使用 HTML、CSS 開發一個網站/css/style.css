@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+Start After CSS Reset!!
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 5 version
+*/
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    color: #333333;
+}
+
+.follow-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f6f6f6;
+}
+
+.follow-bar li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.follow-bar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 7px 0px;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.follow-bar a:hover {
+    text-decoration: underline;
+}
+
+.follow-bar img {
+    display: block;
+    margin-right: 3px;
+} 
+
+.facebook a {
+    color: #3b5998;
+    border-right: 1px solid #cccccc;
+}
+
+.twitter a {
+    color: #00acee;
+}
+
+.hexschool-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.hexschool-logo h1 {
+    position: relative;
+}
+
+.hexschool-logo a {
+    display: block;
+    position: relative;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 224px;
+    height: 50px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+}
+
+.nav-menu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.nav-menu li {
+    margin: 0px 15px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 14px 10px;
+    text-decoration: none;
+    color: #00cc99;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.nav-menu a:hover {
+    border-bottom: 4px solid #00cc99;
+}
+
+.main-promo {
+    position: relative;
+}
+
+.main-promo img{
+    display: block;
+    width: 100%;
+}
+
+.main-promo h2 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+    margin: 0px 24px;
+    line-height: calc(1 + 15/36);
+    letter-spacing: calc(1 + 1/6);
+    font-size: 36px;
+    color: white;
+}
+
+.main-promo::after {
+    content:"";
+    position: absolute;
+    top: 50%;
+    height: 165px;
+    width: 100%;
+    -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+    background: rgba(0,0,0,0.1);
+}
+
+.courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 65px 0px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.course-items {
+    padding: 20px;
+    width: 300px;
+    -webkit-box-shadow: 0px 3px 3px 0px #d6d6d6;
+            box-shadow: 0px 3px 3px 0px #d6d6d6;
+}
+
+.img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 165px;
+}
+
+.img-container img {
+    display: block;
+}
+
+.courses h4 {
+    margin: 10px 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.courses p, .jQuery-points {
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.jQuery-points {
+    margin: 0px 20px;
+    list-style-type: disc;
+}
+
+.differences {
+    margin: 60px 0px;
+}
+
+.differences h3 {
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.differences table {
+    margin: 0 auto;
+}
+
+.differences tr:hover {
+    background:rgba(0, 254, 153, 0.1);
+}
+
+.differences th, .differences td {
+    padding: 10px 24px 14px 24px;
+    width: 160px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.differences th {
+    text-align: left;
+    font-weight: bold;
+    background: #f7f7f7;
+    border-top: 1px solid #dddddd;
+}
+
+.green-word {
+    color: #00a67d;
+}
+
+.signup-area {
+    padding: 40px 20px 30px 20px;
+    background: -o-linear-gradient(#00644b,#009872);
+    background: -webkit-gradient(linear,left top, left bottom,from(#00644b),to(#009872));
+    background: linear-gradient(#00644b,#009872);
+    color: white;
+}
+
+.signup-area h3 {
+    text-align: center;
+    line-height: calc(1 + 14/26);
+    font-size: 26px;
+}
+
+.signup-area form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.signup-area textarea {
+    display: block;
+    width: 460px;
+    font-family: Arial;
+    border-radius: 5px;
+}
+
+.personal-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 460px;
+    margin: 0px 10px;
+}
+
+.personal-input input{
+    display: block;
+    margin: 6px 0px 16px 0px;
+    padding: 7px 10px;
+    width: 100%;
+    border: 0px; /* remove inset shadow*/
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.personal-input input::-webkit-input-placeholder,
+.personal-input input::-moz-placeholder,
+.personal-input input:-ms-input-placeholder,
+.personal-input input:-moz-placeholder {
+    font-size: 14px;
+}
+
+.personal-info .submit {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 20px 0px 0px 0px;
+    padding: 8px 22px;
+    font-size: 16px;
+    background: #00cc99;
+    color: white;
+    border: 0px;  /* remove inset shadow*/
+    border-radius: 5px;
+}
+
+.personal-info .submit:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 3px 1px;
+            box-shadow: 0px 0px 3px 1px;
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+}
+
+.footer-logo a{
+    display: block;
+    width: 171px;
+    height: 36px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+}
+
+.company-contact li {
+    line-height: calc(1 + 10/16);
+}
+
+.company-contact a {
+    text-decoration: none;
+    color: #e12d80;
+}
+
+.company-contact a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px)  {
+    .courses {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
