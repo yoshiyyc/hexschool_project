@@ -37,6 +37,24 @@ All the projects below are listed chronogically with some highlights commented
 * The first multi-pages website project created with HTML & CSS  
 
 　
-* 「使用 HTML、CSS 開發一個網站」課程的最終作業
+* 「使用 HTML、CSS 開發一個網站」課程的最終作業之一
 * 設計稿由六角學院提供
 * 使用 HTML & CSS 製作的第一個多頁式網站 project
+
+#
+
+### 網頁排版練習作業 - 個人履歷網頁設計 - Website Layout Practice - Resume Webpage Design
+
+[GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E5%A4%9A%E9%A0%81%E5%BC%8F%E7%B6%B2%E7%AB%99%E4%BD%9C%E6%A5%AD) 
+
+[GitHub Pages](https://yoshiyyc.github.io/hexschool_project/%E5%A4%9A%E9%A0%81%E5%BC%8F%E7%B6%B2%E7%AB%99%E4%BD%9C%E6%A5%AD/html/) 
+* One of the final projects of the course "使用 HTML、CSS 開發一個網站 - Using HTML & CSS to develop a website" 
+* Visual design provided by Hexschool
+* Single page resume layout practice
+* Utilized flex and psuudo classes techniques to create a timeline
+
+　
+* 「使用 HTML、CSS 開發一個網站」課程的最終作業之一
+* 設計稿由六角學院提供
+* 單頁履歷版型練習
+* 使用 flex 及 pseudo classes 技巧製作出時間軸
