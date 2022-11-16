@@ -131,10 +131,12 @@ All the projects below are listed chronogically with some highlights commented
 [GitHub Pages](https://yoshiyyc.github.io/hexschool_project/%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86%20-%20%E5%8A%9F%E8%83%BD%E6%80%A7%E7%82%BA%E5%B0%8E%E5%90%91%E7%9A%84%E4%BB%8B%E9%9D%A2%E8%A6%8F%E5%8A%83/html/) 
 * One of the chapter assignments of the course "Bootstrap 5 網頁切版整合術 - Bootstrap 5" 
 * [Visual design template](https://codepen.io/Wcc723/pen/JjymyYB) provided by Hexschool, some additional adjustments made to theme color
-* Inserted charts to the admin panel using [Chart.js](https://www.chartjs.org/)(code is provided by Hexschool)
+* Inserted charts to the admin panel using [Chart.js](https://www.chartjs.org/) (code is provided by Hexschool)
 * Bootstrap highlights:
   * Collapse
   * Scrollspy
+  * Columns
+* RWD
 
 　
 * 「Bootstrap 5 網頁切版整合術」課程的章節作業
@@ -143,3 +145,29 @@ All the projects below are listed chronogically with some highlights commented
 * Bootstrap 亮點：
   * 折疊效果
   * 滾動監控
+  * 欄位
+* RWD
+
+#
+
+### Landing Page 設計稿練習 - Landing Page Design Practice
+
+[GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/Landing%20Page%20%E8%A8%AD%E8%A8%88%E7%A8%BF%E7%B7%B4%E7%BF%92) 
+
+[GitHub Pages](https://yoshiyyc.github.io/hexschool_project/Landing%20Page%20%E8%A8%AD%E8%A8%88%E7%A8%BF%E7%B7%B4%E7%BF%92/html/) 
+* One of the chapter assignments of the course "Bootstrap 5 網頁切版整合術 - Bootstrap 5" 
+* [Visual design](https://hexschool.github.io/bootstrap5-homework/index.html) provided by Hexschool
+* Bootstrap highlights:
+  * Navbar
+  * Accordion
+  * Form
+* RWD
+
+　
+* 「Bootstrap 5 網頁切版整合術」課程的章節作業
+* [設計稿](https://hexschool.github.io/bootstrap5-homework/index.html)由六角學院提供
+* Bootstrap 亮點：
+  * 導覽列
+  * 手風琴
+  * 表單
+* RWD
