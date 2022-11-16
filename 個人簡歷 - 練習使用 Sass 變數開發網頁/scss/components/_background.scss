@@ -1,0 +1,9 @@
+.bg-cover {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.bg-dark-gradient {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.8))
+}
