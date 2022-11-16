@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 設計稿練習</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-md">
+                <h1 class="my-auto h4">
+                    <a class="navbar-brand d-block m-auto" href="../html/index.html">
+                        <i class="bi bi-circle-fill text-primary"></i>
+                        小懶蟲
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarToggler" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../html/index.html">
+                                首頁
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                服務介紹
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="true" href="../html/packages.html">
+                                方案費用
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/faq.html">
+                                常見問題
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary mx-md-3" href="../html/packages.html">
+                        方案費用
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sub-banner p-5 text-center">
+            <h5 class="text-primary">
+                HAPPY LIFE
+            </h5>
+            <h2 class="h1">
+                開始當個小懶蟲
+            </h2>
+        </section>
+        <section>
+            <div class="row container mx-auto px-0 py-5">
+                <form class="form col-12 col-md-8 mx-md-auto px-md-4 py-md-5">
+                    <h4 class="mb-3 px-3 border-start border-1 border-primary">
+                        選擇方案
+                    </h4>
+                    <ul class="row row-cols-1 row-cols-md-3 g-2 list-unstyled mb-4">
+                        <li class="col">
+                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                            <label class="btn btn-outline-primary d-block fw-bold link-dark" for="option1">
+                                小小搭懶蟲
+                                <br>
+                                NT 298/月
+                            </label>
+                        </li>
+                        <li class="col">
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                            <label class="btn btn-outline-primary d-block fw-bold link-dark" for="option2">
+                                睡一整天囉
+                                <br>
+                                NT 666/月
+                            </label>
+                        </li>
+                        <li class="col">
+                            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
+                            <label class="btn btn-outline-primary d-block fw-bold link-dark" for="option3">
+                                客製化方案
+                                <br>
+                                客服詢價
+                            </label>
+                        </li>
+                    </ul>
+                    <h4 class="mb-3 px-3 border-start border-1 border-primary">
+                        填寫資料
+                    </h4>
+                    <div class="row gx-2 gy-3 mb-4">
+                        <div class="col-md-6">
+                            <label for="first-name" class="form-label">
+                                名字
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label">
+                                姓氏
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="col-12">
+                            <label for="phone" class="form-label">
+                                手機號碼
+                            </label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">
+                                電子郵件
+                            </label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-12">
+                            <label for="address1" class="form-label">
+                                住址
+                            </label>
+                            <input type="text" class="form-control" id="address1">
+                        </div>
+                        <div class="col-12">
+                            <label for="time" class="form-label">
+                                方便聯繫時間
+                            </label>
+                            <select class="form-select" id="time">
+                                <option value="afternoon">
+                                    13:00-17:00
+                                </option>
+                                <option value="evening">
+                                    17:00-21:00
+                                </option>
+                                <option value="night">
+                                    21:00-01:00
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="address2" class="form-label">
+                                住址
+                            </label>
+                            <input type="text" class="form-control" id="address2">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="additions">
+                                加購服務
+                            </label>
+                            <br>
+                            <div class="form-check form-check-inline" id="additions">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">
+                                    每週一清掃家裡+100
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">
+                                    按摩+50
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">
+                                    聽你說話+150
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="comments" class="form-label">
+                                備註說明
+                            </label>
+                            <textarea class="form-control" id="comments" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary py-2 w-100 h5">
+                        選擇方案
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="py-5 bg-light">
+            <div class="container">
+                <h3 class="text-center mb-4 h2">
+                    需要其他協助嗎？
+                </h3>
+                <ul class="row list-unstyled d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <li class="col my-4">
+                        <div class="card h-100 border-0 shadow">
+                            <p class="card-text d-flex">
+                                <a class="d-block mb-0 px-4 py-4 w-100 text-decoration-none text-center h4 link-dark" href="tel:07-555-666">
+                                    <i class="bi bi-telephone-fill mx-1 link-primary"></i>
+                                    07-555-666
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col my-4">
+                        <div class="card h-100 border-0 shadow">
+                            <p class="card-text d-flex">
+                                <a class="d-block mb-0 px-4 py-4 w-100 text-decoration-none text-center h4 link-dark" href="../html/packages.html">
+                                    <i class="bi bi-facebook mx-1 link-primary"></i>
+                                    我就是個小懶蟲
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col my-4">
+                        <div class="card h-100 border-0 shadow">
+                            <p class="card-text d-flex">
+                                <a class="d-block mb-0 px-4 py-4 w-100 text-decoration-none text-center h4 link-dark" href="../html/faq.html">
+                                    <i class="bi bi-question-lg mx-1 link-primary"></i>
+                                    常見問題
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-0 bg-secondary">
+            <div class="container p-3">
+                <p class="mb-0 text-center text-white">
+                    Copyright © 2021 小懶蟲.All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
