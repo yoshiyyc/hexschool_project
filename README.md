@@ -66,7 +66,7 @@ All the projects below are listed chronogically with some highlights commented
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C) 
 
 [GitHub Pages](https://yoshiyyc.github.io/hexschool_project/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C/html/) 
-* The final projects of the course "使用 jQuery 打造互動性網頁動畫效果 - Using HTML & CSS to develop a website" 
+* The final project of the course "使用 jQuery 打造互動性網頁動畫效果 - Using HTML & CSS to develop a website" 
 * Visual design provided by Hexschool
 * Used jQuery to achieve the following effects:
   * Navbar button dropdown
@@ -82,3 +82,23 @@ All the projects below are listed chronogically with some highlights commented
   * 首頁宣傳圖輪播 ([Swiper](https://swiperjs.com/get-started))
   * 燈箱效果 ([Lightbox](https://lokeshdhakar.com/projects/lightbox2/))
   * 回到網頁上方按鈕
+
+#
+
+### 【最終試煉】一變應萬變的響應式網頁設計 - Responsive Web Design
+
+[GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C) 
+
+[GitHub Pages](https://yoshiyyc.github.io/hexschool_project/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C/html/) 
+* The final project of the course "一變應萬變的響應式網頁設計 - Responsive Web Design" 
+* Visual design provided by Hexschool
+* Restaurant website created with RWD
+* jQuery: Navbar dropdown, Lightbox
+* Modified css to scss (mixin, variable, etc.)  
+
+　
+* 「一變應萬變的響應式網頁設計」課程的最終作業
+* 設計稿由六角學院提供
+* 初次使用 RWD 以製作餐廳網站
+* jQuery: 下拉式選單、Lightbox 
+* 將 css 改為 scss （mixin, variable, etc.）
