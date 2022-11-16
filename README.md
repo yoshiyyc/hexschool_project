@@ -120,3 +120,26 @@ All the projects below are listed chronogically with some highlights commented
 * 設計版型由六角學院提供，顏色及部分圖片經過客製化調整
 * 結合 Bootstrap 及 Sass/SCSS 技巧打造個人簡歷
 * 背景圖使用視差滾動效果
+
+#
+
+
+### 後台管理 - 功能性為導向的介面規劃 - Admin Panel - Function Focused Interface Design
+
+[GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86%20-%20%E5%8A%9F%E8%83%BD%E6%80%A7%E7%82%BA%E5%B0%8E%E5%90%91%E7%9A%84%E4%BB%8B%E9%9D%A2%E8%A6%8F%E5%8A%83) 
+
+[GitHub Pages](https://yoshiyyc.github.io/hexschool_project/%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86%20-%20%E5%8A%9F%E8%83%BD%E6%80%A7%E7%82%BA%E5%B0%8E%E5%90%91%E7%9A%84%E4%BB%8B%E9%9D%A2%E8%A6%8F%E5%8A%83/html/) 
+* One of the chapter assignments of the course "Bootstrap 5 網頁切版整合術 - Bootstrap 5" 
+* [Visual design template](https://codepen.io/Wcc723/pen/JjymyYB) provided by Hexschool, some additional adjustments made to theme color
+* Inserted charts to the admin panel using [Chart.js](https://www.chartjs.org/)(code is provided by Hexschool)
+* Bootstrap highlights:
+  * Collapse
+  * Scrollspy
+
+　
+* 「Bootstrap 5 網頁切版整合術」課程的章節作業
+* [設計版型](https://codepen.io/Wcc723/pen/JjymyYB)由六角學院提供，主色經過客製化調整
+* 使用[Chart.js](https://www.chartjs.org/)在後台增加圖表（程式由六角學院提供）
+* Bootstrap 亮點：
+  * 折疊效果
+  * 滾動監控
