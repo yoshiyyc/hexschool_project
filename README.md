@@ -171,3 +171,24 @@ All the projects below are listed chronogically with some highlights commented
   * 手風琴
   * 表單
 * RWD
+
+#
+
+### 【JS 必修篇最終關卡任務】作業一：todolist 待辦事項 - Using Javascript to Create a Todolist
+[GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90JS%20%E5%BF%85%E4%BF%AE%E7%AF%87%E6%9C%80%E7%B5%82%E9%97%9C%E5%8D%A1%E4%BB%BB%E5%8B%99%E3%80%91%E4%BD%9C%E6%A5%AD%E4%B8%80%EF%BC%9Atodolist%20%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85) 
+
+[GitHub Pages]([https://yoshiyyc.github.io/hexschool_project/Landing%20Page%20%E8%A8%AD%E8%A8%88%E7%A8%BF%E7%B7%B4%E7%BF%92/html/](https://yoshiyyc.github.io/hexschool_project/%E3%80%90JS%20%E5%BF%85%E4%BF%AE%E7%AF%87%E6%9C%80%E7%B5%82%E9%97%9C%E5%8D%A1%E4%BB%BB%E5%8B%99%E3%80%91%E4%BD%9C%E6%A5%AD%E4%B8%80%EF%BC%9Atodolist%20%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85/html/)) 
+* One of the chapter assignments of the course "JavaScript 必修篇 - 前端修練全攻略 - Javascript Essentials" 
+* [Visual design template (includes HTML & CSS)](https://codepen.io/hexschool/pen/KKmvpPP) provided by Hexschool, part of the HTML and CSS are adjusted to meet Javascript needs
+* Utilized pure Javascript to create the classic CRUD todolist with some additional functions:
+  * Categorize the all, incompleted, completed todos into different tabs
+  * Show the number of incompleted todos
+  * Clear all the completed todos at once
+
+　
+* 「JavaScript 必修篇 - 前端修練全攻略」課程的章節作業
+* [版型（含 HTML & CSS）](https://codepen.io/hexschool/pen/KKmvpPP)由六角學院提供，僅依 JS 需求調整部分 HTML 及 CSS
+* 以純 Javascript 製作出經典的 CRUD todolist，額外增加的功能包含：
+  * 將全部、待完成、已完成事項歸類到不同分頁
+  * 顯示待完成事項總數
+  * 一次性清除所有已完成的待辦事項
