@@ -224,6 +224,7 @@ All the projects below are listed chronogically with some highlights commented
   * Access to the data source API by using [Axios](https://axios-http.com/) 
   * Search the items using keywords, and categorized them based on types
   * Sort the result table based on different prices/ transaction volume
+
 　
 * 「JavaScript 必修篇 - 前端修練全攻略」課程的章節作業
 * [版型（含 HTML & CSS）](https://codepen.io/hexschool/pen/rNwzqjd)由六角學院提供，僅依 JS 需求調整部分 HTML 及 CSS
