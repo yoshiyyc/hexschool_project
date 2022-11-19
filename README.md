@@ -204,7 +204,7 @@ All the projects below are listed chronogically with some highlights commented
   * Clear all the completed todos at once
 
 　
-* 「JavaScript 必修篇 - 前端修練全攻略」課程的章節作業
+* 「JavaScript 必修篇 - 前端修練全攻略」課程的最終作業
 * [版型（含 HTML & CSS）](https://codepen.io/hexschool/pen/KKmvpPP)由六角學院提供，僅依 JS 需求調整部分 HTML 及 CSS
 * 以純 Javascript 製作出經典的 CRUD todolist，額外增加的功能包含：
   * 將全部、待完成、已完成事項歸類到不同分頁
