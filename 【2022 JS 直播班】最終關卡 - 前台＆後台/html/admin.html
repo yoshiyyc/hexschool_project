@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【2022 JS 直播班】首頁（後台）</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <nav class="topBar">
+        <div class="wrap">
+            <h1>
+                <a href="../html/index.html" class="logo">
+                    WOWOROOM
+                </a>
+            </h1>
+            <span class="material-icons menuToggle">
+                menu
+            </span>
+            <ul class="topBar-menu">
+                <li>
+                    <a href="../html/admin.html">
+                        後台管理
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        管理員登入
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="wrap">
+        <h2 class="section-title">
+            全品項營收比重
+        </h2>
+        <div id="chart">
+            <p class="text-center">
+                資料載入中⋯⋯
+            </p>
+        </div>
+    </section>
+    <section class="wrap orderPage-list">
+        <a href="#" class="discardAllBtn">
+            清除全部訂單
+        </a>
+        <div class="orderTableWrap">
+            <table class="orderPage-table">
+                <thead>
+                    <tr>
+                        <th>
+                            訂單編號
+                        </th>
+                        <th>
+                            聯絡人
+                        </th>
+                        <th>
+                            聯絡地址
+                        </th>
+                        <th>
+                            電子郵件
+                        </th>
+                        <th>
+                            訂單品項
+                        </th>
+                        <th>
+                            訂單日期
+                        </th>
+                        <th>
+                            訂單狀態
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBody">
+                    <tr>
+                        <td class="text-center" colspan="8">
+                            資料載入中⋯⋯
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.js"></script>
+    <!-- 預設 JS，請同學不要修改此處 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ele = document.querySelector('.recommendation-wall');
+            ele.style.cursor = 'grab';
+            let pos = {
+                top: 0,
+                left: 0,
+                x: 0,
+                y: 0
+            };
+            const mouseDownHandler = function (e) {
+                ele.style.cursor = 'grabbing';
+                ele.style.userSelect = 'none';
+                pos = {
+                    left: ele.scrollLeft,
+                    top: ele.scrollTop,
+                    // Get the current mouse position
+                    x: e.clientX,
+                    y: e.clientY,
+                };
+                document.addEventListener('mousemove', mouseMoveHandler);
+                document.addEventListener('mouseup', mouseUpHandler);
+            };
+            const mouseMoveHandler = function (e) {
+                // How far the mouse has been moved
+                const dx = e.clientX - pos.x;
+                const dy = e.clientY - pos.y;
+                // Scroll the element
+                ele.scrollTop = pos.top - dy;
+                ele.scrollLeft = pos.left - dx;
+            };
+            const mouseUpHandler = function () {
+                ele.style.cursor = 'grab';
+                ele.style.removeProperty('user-select');
+                document.removeEventListener('mousemove', mouseMoveHandler);
+                document.removeEventListener('mouseup', mouseUpHandler);
+            };
+            // Attach the handler
+            ele.addEventListener('mousedown', mouseDownHandler);
+        });
+        // menu 切換
+        let menuOpenBtn = document.querySelector('.menuToggle');
+        let linkBtn = document.querySelectorAll('.topBar-menu a');
+        let menu = document.querySelector('.topBar-menu');
+        menuOpenBtn.addEventListener('click', menuToggle);
+        linkBtn.forEach((item) => {
+            item.addEventListener('click', closeMenu);
+        })
+
+        function menuToggle() {
+            if (menu.classList.contains('openMenu')) {
+                menu.classList.remove('openMenu');
+            } else {
+                menu.classList.add('openMenu');
+            }
+        }
+
+        function closeMenu() {
+            menu.classList.remove('openMenu');
+        }
+    </script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>
