@@ -87,6 +87,8 @@ All the projects below are listed chronogically with some highlights commented
 
 ### 【最終試煉】使用 jQuery 打造互動性網頁動畫效果 - Using jQuery to Create Animation effects for an Interactive Website
 
+<img src="https://imgur.com/V0Hrsqx.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20jQuery%20%E6%89%93%E9%80%A0%E4%BA%92%E5%8B%95%E6%80%A7%E7%B6%B2%E9%A0%81%E5%8B%95%E7%95%AB%E6%95%88%E6%9E%9C/html/) 
