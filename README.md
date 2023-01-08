@@ -113,6 +113,8 @@ All the projects below are listed chronogically with some highlights commented
 
 ### 【最終試煉】一變應萬變的響應式網頁設計 - Responsive Web Design
 
+<img src="https://imgur.com/BNc0m0u.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%B8%80%E8%AE%8A%E6%87%89%E8%90%AC%E8%AE%8A%E7%9A%84%E9%9F%BF%E6%87%89%E5%BC%8F%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%B8%80%E8%AE%8A%E6%87%89%E8%90%AC%E8%AE%8A%E7%9A%84%E9%9F%BF%E6%87%89%E5%BC%8F%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88/html/) 
