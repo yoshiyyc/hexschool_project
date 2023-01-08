@@ -31,6 +31,8 @@ All the projects below are listed chronogically with some highlights commented
 ---
 ### 【最終試煉】使用 HTML、CSS 開發一個網站 - Using HTML & CSS to Develop a Website
 
+<img src="https://imgur.com/jfBz0ha.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20HTML%E3%80%81CSS%20%E9%96%8B%E7%99%BC%E4%B8%80%E5%80%8B%E7%B6%B2%E7%AB%99)  
  
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E3%80%90%E6%9C%80%E7%B5%82%E8%A9%A6%E7%85%89%E3%80%91%E4%BD%BF%E7%94%A8%20HTML%E3%80%81CSS%20%E9%96%8B%E7%99%BC%E4%B8%80%E5%80%8B%E7%B6%B2%E7%AB%99/html/) 
