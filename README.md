@@ -156,6 +156,8 @@ All the projects below are listed chronogically with some highlights commented
 
 ### 後台管理 - 功能性為導向的介面規劃 - Admin Panel - Function Focused Interface Design
 
+<img src="https://imgur.com/5m4EZkH.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86%20-%20%E5%8A%9F%E8%83%BD%E6%80%A7%E7%82%BA%E5%B0%8E%E5%90%91%E7%9A%84%E4%BB%8B%E9%9D%A2%E8%A6%8F%E5%8A%83) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86%20-%20%E5%8A%9F%E8%83%BD%E6%80%A7%E7%82%BA%E5%B0%8E%E5%90%91%E7%9A%84%E4%BB%8B%E9%9D%A2%E8%A6%8F%E5%8A%83/html/) 
