@@ -135,6 +135,8 @@ All the projects below are listed chronogically with some highlights commented
 
 ### 個人簡歷 - 練習使用 Sass 變數開發網頁 - Bio Page - Practice Using Sass Variables to Develop a Webpage
 
+<img src="https://imgur.com/IksLAQn.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E5%80%8B%E4%BA%BA%E7%B0%A1%E6%AD%B7%20-%20%E7%B7%B4%E7%BF%92%E4%BD%BF%E7%94%A8%20Sass%20%E8%AE%8A%E6%95%B8%E9%96%8B%E7%99%BC%E7%B6%B2%E9%A0%81) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E5%80%8B%E4%BA%BA%E7%B0%A1%E6%AD%B7%20-%20%E7%B7%B4%E7%BF%92%E4%BD%BF%E7%94%A8%20Sass%20%E8%AE%8A%E6%95%B8%E9%96%8B%E7%99%BC%E7%B6%B2%E9%A0%81/html/) 
