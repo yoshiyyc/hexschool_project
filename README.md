@@ -49,6 +49,8 @@ All the projects below are listed chronogically with some highlights commented
 
 ### 多頁式網站作業 - Multi-pages Website Assignment
 
+<img src="https://imgur.com/3ub3Gkq.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E5%A4%9A%E9%A0%81%E5%BC%8F%E7%B6%B2%E7%AB%99%E4%BD%9C%E6%A5%AD) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E5%A4%9A%E9%A0%81%E5%BC%8F%E7%B6%B2%E7%AB%99%E4%BD%9C%E6%A5%AD/html/) 
