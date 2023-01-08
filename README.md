@@ -184,6 +184,8 @@ All the projects below are listed chronogically with some highlights commented
 
 ### Landing Page 設計稿練習 - Landing Page Design Practice
 
+<img src="https://imgur.com/mZOz2Iq.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/Landing%20Page%20%E8%A8%AD%E8%A8%88%E7%A8%BF%E7%B7%B4%E7%BF%92) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/Landing%20Page%20%E8%A8%AD%E8%A8%88%E7%A8%BF%E7%B7%B4%E7%BF%92/html/) 
