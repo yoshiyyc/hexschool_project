@@ -209,6 +209,9 @@ All the projects below are listed chronogically with some highlights commented
 #
 
 ### 【JS 必修篇最終關卡任務】作業一：todolist 待辦事項 - Using Javascript to Create a Todolist
+
+<img src="https://imgur.com/cDVvM94.jpg" width="400">
+
 [GitHub](https://github.com/yoshiyyc/hexschool_project/tree/main/%E3%80%90JS%20%E5%BF%85%E4%BF%AE%E7%AF%87%E6%9C%80%E7%B5%82%E9%97%9C%E5%8D%A1%E4%BB%BB%E5%8B%99%E3%80%91%E4%BD%9C%E6%A5%AD%E4%B8%80%EF%BC%9Atodolist%20%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85) 
 
 [Demo](https://yoshiyyc.github.io/hexschool_project/%E3%80%90JS%20%E5%BF%85%E4%BF%AE%E7%AF%87%E6%9C%80%E7%B5%82%E9%97%9C%E5%8D%A1%E4%BB%BB%E5%8B%99%E3%80%91%E4%BD%9C%E6%A5%AD%E4%B8%80%EF%BC%9Atodolist%20%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85/html/) 
